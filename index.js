@@ -34,6 +34,7 @@ rootRef.on('value', function (snapshot) {
         insertString+= '<tr>' +
             '<td>'+records[key].date+'</td>' +
             '<td>'+records[key].day+'</td>' +
+            '<td>'+records[key].person+'</td>' +
             '<td>'+records[key].name+'</td>' +
             '<td>'+records[key].page+'</th>' +
             '</tr>';
