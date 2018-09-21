@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UTL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                <strong>
+                    100 Days of Reading!
+                </strong>
+            </h1>
+            <p class="subtitle">
+                Let's <strong>Begin</strong>!
+                <br>
+                <i>By Under The Lamp( A reading and Writing Club)</i>
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="notification">
+                *Rules*
+                - Pick a book 📖 <br>
+                - Read a minimum of 20 pages ( book can be of any size, big or small) 🔖<br>
+                - No maximum limit<br>
+                - By end of next day - Report to the group.📟<br>
+                *Report example*<br>
+                Date: 26/08/2018 <br>
+                Book: Master of the Game <br>
+                Pages: 213-245( 32 pages)<br>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="notification">
+            <div class="control">
+                <input class="input" id='date' type="text" placeholder="Date" disabled>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-primary" id='day' type="text" placeholder="Day">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-info"  id='name' type="text" placeholder="Book Name">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-success" id="page" type="text" placeholder="Pages">
+                </div>
+            </div>
+            <div class="control ">
+                <button id='sub' class="button is-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="notification">
+            <table class="table is-hoverable is-fullwidth">
+                <thead>
+                    <tr>
+                        <th><abbr title="Date">Date</abbr></th>
+                        <th>Day</th>
+                        <th><abbr title="Name of the Book">Book</abbr></th>
+                        <th><abbr title="Pages Read">Pages</abbr></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th><abbr title="Date">Date</abbr></th>
+                        <th>Day</th>
+                        <th><abbr title="Name of the Book">Book</abbr></th>
+                        <th><abbr title="Pages Read">Pages</abbr></th>
+                    </tr>
+                </tfoot>
+                <tbody id='dayData'>
+                    <tr>
+                        <td><abbr title="Date">Date</abbr></th>
+                        <td>Day</th>
+                        <td><abbr title="Name of the Book">Book</abbr></th>
+                        <td><abbr title="Pages Read">Pages</abbr></th>
+                    </tr>
+                    <tr>
+                        <td><abbr title="Date">Date</abbr></th>
+                        <td>Day</th>
+                        <td><abbr title="Name of the Book">BoefDzsgredfzvdzrgdrok</abbr></th>
+                        <td><abbr title="Pages Read">Pages</abbr></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Under The Lamp.</strong>
+            </p>
+        </div>
+    </footer>
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAQEJ8sGns-znHzP3Cm6CO1uYnnmVLWC2k",
+            authDomain: "daysofreading-100.firebaseapp.com",
+            databaseURL: "https://daysofreading-100.firebaseio.com",
+            projectId: "daysofreading-100",
+            storageBucket: "daysofreading-100.appspot.com",
+            messagingSenderId: "1070971055803"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src='index.js'></script>
+
+</body>
+
+</html>
