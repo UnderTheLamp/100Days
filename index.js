@@ -11,7 +11,7 @@ let dateToday= dt.getDate() + '/' + (dt.getMonth() + 1) + '/' + dt.getFullYear()
 dateInput.value = dateToday;
 $('#sub').click(function () {
     let record = {
-        person:$('person').val(),
+        person:$('#person').val(),
         date: dateToday,
         name: $('#name').val(),
         day: $('#day').val(),
