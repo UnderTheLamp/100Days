@@ -31,13 +31,13 @@ rootRef.on('value', function (snapshot) {
     $('#dayData').html('');
     let insertString = '';
     for (key in records) {
-        insertString+= '<tr>' +
+        insertString= '<tr>' +
             '<td>'+records[key].date+'</td>' +
             '<td>'+records[key].day+'</td>' +
             '<td>'+records[key].person+'</td>' +
             '<td>'+records[key].name+'</td>' +
             '<td>'+records[key].page+'</th>' +
-            '</tr>';
+            '</tr>'+insertString;
     }
     $('#dayData').html(insertString);
 });
