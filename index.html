@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="section">
+    <section class="section has-background-primary">
         <div class="container">
             <h1 class="title">
                 <strong>
@@ -26,21 +26,24 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="notification">
-                *Rules*
+            <div class="notification has-background-primary">
+                <b>
+                    Rules
+                </b>
                 - Pick a book 📖 <br>
                 - Read a minimum of 20 pages ( book can be of any size, big or small) 🔖<br>
                 - No maximum limit<br>
                 - By end of next day - Report to the group.📟<br>
-                *Report example*<br>
+                <b>Report example</b><br>
                 Date: 26/08/2018 <br>
+                Day: 14 (<i>This mentions how many days you have read!</i>)<br> 
                 Book: Master of the Game <br>
                 Pages: 213-245( 32 pages)<br>
             </div>
         </div>
     </section>
     <div class="container">
-        <div class="notification">
+        <div class="notification box">
             <div class="control">
                 <input class="input" id='date' type="text" placeholder="Date" disabled>
             </div>
@@ -51,7 +54,7 @@
             </div>
             <div class="field">
                 <div class="control">
-                    <input class="input is-info"  id='person' type="text" placeholder="Your Name">
+                    <input class="input is-link"  id='person' type="text" placeholder="Your Name">
                 </div>
             </div>
             <div class="field">
@@ -72,7 +75,7 @@
     <div class="container">
         <div class="notification">
             <table class="table is-hoverable is-fullwidth">
-                <thead>
+                <thead class="has-background-primary">
                     <tr>
                         <th><abbr title="Date">Date</abbr></th>
                         <th>Day</th>
@@ -81,7 +84,7 @@
                         <th><abbr title="Pages Read">Pages</abbr></th>
                     </tr>
                 </thead>
-                <tfoot>
+                <tfoot class="has-background-primary">
                     <tr>
                         <th><abbr title="Date">Date</abbr></th>
                         <th>Day</th>
@@ -95,7 +98,7 @@
             </table>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer has-background-primary">
         <div class="content has-text-centered">
             <p>
                 <strong>Under The Lamp.</strong>
@@ -104,9 +107,9 @@
     </footer>
     
     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
     <script>
