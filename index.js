@@ -32,11 +32,11 @@ rootRef.on('value', function (snapshot) {
     let insertString = '';
     for (key in records) {
         insertString= '<tr>' +
-            '<td>'+records[key].date+'</td>' +
-            '<td>'+records[key].day+'</td>' +
-            '<td>'+records[key].person+'</td>' +
-            '<td>'+records[key].name+'</td>' +
-            '<td>'+records[key].page+'</th>' +
+            `<td>${records[key].date.slice(0,-5)}</td>` +
+            `<td>${records[key].day}</td>` +
+            `<td>${records[key].person}</td>` +
+            `<td>${records[key].name}</td>` +
+            `<td>${records[key].page}</th>` +
             '</tr>'+insertString;
     }
     $('#dayData').html(insertString);
